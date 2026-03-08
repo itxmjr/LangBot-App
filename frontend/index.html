@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LangBot — Your Premium AI Assistant</title>
+    <meta name="description" content="A state-of-the-art AI assistant with a stunning glassmorphism interface.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="app-container">
+        <div class="glass-container">
+            <header class="chat-header">
+                <div class="header-info">
+                    <div class="logo-wrapper">
+                        <i class="ph ph-robot icon-glow"></i>
+                    </div>
+                    <div>
+                        <h1>LangBot</h1>
+                        <p class="status"><span class="pulse"></span> Online & Ready</p>
+                    </div>
+                </div>
+            </header>
+
+            <main class="chat-box" id="chat-box">
+                <!-- Initial Welcome Message -->
+                <div class="message system-message">
+                    <div class="avatar"><i class="ph ph-sparkle"></i></div>
+                    <div class="message-content">
+                        <p>Hello! I am <strong>LangBot</strong>, your intelligent AI assistant.</p>
+                        <p>I specialize in answering your queries and helping you write, brainstorm, or explore new
+                            ideas. How can I assist you today?</p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="chat-input-area">
+                <form id="chat-form">
+                    <div class="input-wrapper">
+                        <textarea id="user-input" placeholder="Ask anything..." rows="1" required></textarea>
+                        <button type="submit" id="send-btn" disabled>
+                            <i class="ph ph-paper-plane-right"></i>
+                        </button>
+                    </div>
+                </form>
+                <div class="footer-note">LangBot can make mistakes. Consider verifying important information. Built with
+                    FastAPI and LangChain.</div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
